@@ -89,14 +89,15 @@ export default function Booking({
     <>
       <form 
         onSubmit={submit}
-        className="max-w-xl w-full bg-white/60 backdrop-blur-sm p-6 rounded-2xl shadow-sm border border-gray-100"
+        className="max-w-xl w-full bg-(--color-card)/70 backdrop-blur-md p-6 rounded-2xl shadow-md border border-white/10"
+
         aria-labelledby="booking-form-title"
       >
         <h2 id="booking-form-title" className="text-lg font-semibold mb-3">
           Booking (Proof of Concept)
         </h2>
 
-        <p className="text-sm text-gray-600 mb-4">
+        <p className="text-sm text-gray-300 mb-4">
           This is a placeholder booking form for the client - it simulates submit and validation.
         </p>
 
@@ -226,7 +227,7 @@ export default function Booking({
           </button>
         </div>
 
-        <div className="mt-3 text-xs text-gray-500">
+        <div className="mt-3 text-xs text-gray-200">
           <strong>POC notes:</strong> Wire this to the client&apos;s booking API by replacing the
           `onSubmit` prop or hooking into your service call inside `submit()`.
         </div>

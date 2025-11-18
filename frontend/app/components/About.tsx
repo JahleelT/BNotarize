@@ -1,52 +1,60 @@
-"use client";
-
 import Image from "next/image";
 
 export default function About() {
   return (
-    <>
-      <section
-        id="about"
-        className="w-full py-20 px-6 md:px-12 lg:px-20 bg-white"
-      >
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold tracking-tight mb-10">
-            About
-          </h2>
+    <section
+      id="about"
+      className="w-full py-20 px-6 md:px-12 lg:px-20 bg-(--color-bg)"
+    >
+      <div className="max-w-5xl mx-auto">
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div className="md:col-span-1">
-              <div className="relative w-full h-64 rounded-xl overflow-hidden shadow-md">
-                <Image
-                  src="/bill_photo.png"
-                  alt="Photo of William Rider"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-            {/* RIGHT SIDE - TITLE + MAIN TEXT */}
-            <div className="md:col-span-2 flex flex-col space-y-4">
-              <h3 className="text-2xl font-semibold">
-                Meet Your Notary
-              </h3>
+        {/* Section Header */}
+        <h2 className="text-3xl font-bold text-(--color-text) mb-2">
+          About Good Signs Notary
+        </h2>
+        <div className="w-16 h-1 bg-(--color-accent) mb-10" />
 
-              <p className="text-gray-700 leading-relaxed">
-                At Good Signs Notary Services, we take pride in providing reliable, professional, and convenient notarization services. Whether in-person or mobile, we ensure every client receives thorough attention and a smooth experience.
-              </p>
-
-              <p className="text-gray-700 leading-relaxed">
-                With a focus on accuracy and personal connection, it is my goal to bring a warm trustworthy approach to every signing - from simple affidavits to complex loan documents.
-              </p>
-
-              {/* Extra content naturally flows below image on small screens */}
-              <p className="text-gray-700 leading-relaxed">
-                This business combines efficiency with care, ensuring that clietns always feel informed, supported, and confident throughout the entire notarization process.
-              </p>
-            </div>
+        {/* --- FIRST ROW --- */}
+        {/* Image + first paragraph only */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+          
+          {/* Photo */}
+          <div className="relative w-full h-72 rounded-xl overflow-hidden bg-(--color-card) border border-white/10 shadow-lg">
+            <Image
+              src="/bill_photo.png"
+              alt="Client Photo"
+              fill
+              className="object-cover"
+            />
           </div>
+
+          {/* First paragraph (aligns with image) */}
+          <p className="text-gray-300 text-2xl leading-relaxed">
+            Good Signs Notary Services is committed to delivering reliable,
+            accessible, and professional notarization throughout the region.
+            From general acknowledgments to loan documents, mobile services,
+            and remote online notarizations, every appointment is handled with
+            precision and care.
+          </p>
+
         </div>
-      </section>
-    </>
+
+        {/* --- FULL-WIDTH PARAGRAPHS BELOW --- */}
+        <div className="mt-10 space-y-6">
+          <p className="text-gray-300 text-2xl leading-relaxed">
+            Built on principles of clarity, punctuality, and trust, Good Signs
+            Notary ensures a seamless experience from start to finish.
+          </p>
+
+          <p className="text-gray-300 text-2xl leading-relaxed">
+            Your documents matter — and they’re treated with the utmost 
+            integrity and attention to detail. Whether you need quick
+            assistance or a guided signing session, we make sure you feel
+            supported, informed, and confident every step of the way.
+          </p>
+        </div>
+
+      </div>
+    </section>
   );
 }
