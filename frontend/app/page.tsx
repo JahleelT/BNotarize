@@ -14,7 +14,7 @@ export default function Home() {
 
           {/* FAINT CENTER LOGO */}
           <Image
-            src="/notary_logo.png"
+            src="/no_bg_logo.png"
             alt="Good Signs Notary Logo"
             width={500}
             height={500}
