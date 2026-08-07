@@ -36,6 +36,9 @@ export default function About() {
             and remote online notarizations, every appointment is handled with
             precision and care.
           </p>
+          <a href="#booking" className="inline-flex items-center justify-center rounded-xl px-8 py-3 bg-linear-to-r from-blue-500 to-indigo-500 text-white text-lg shadow-lg font-semibold hover:scale-105 hover:shadow-xl transition-all duration-300">
+            Book an Appointment
+          </a>
 
         </div>
 

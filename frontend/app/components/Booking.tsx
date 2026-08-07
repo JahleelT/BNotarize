@@ -86,7 +86,7 @@ export default function Booking({
   };
 
   return (
-    <>
+    < section id="booking" className="scroll-mt-24">
       <form 
         onSubmit={submit}
         className="max-w-xl w-full bg-(--color-card)/70 backdrop-blur-md p-6 rounded-2xl shadow-md border border-white/10"
@@ -232,7 +232,7 @@ export default function Booking({
           `onSubmit` prop or hooking into your service call inside `submit()`.
         </div>
       </form>
-    </>
+    </section>
   );
 }
 

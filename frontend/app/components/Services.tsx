@@ -7,6 +7,7 @@ interface Service {
   title: string;
   description: string;
   price: string;
+  estimatedTime?: string;
 }
 
 const services: Service[] = [
@@ -15,19 +16,28 @@ const services: Service[] = [
     title: "Remote Online Notary",
     description: "Fully remote notarization service available via secure video session.",
     price: "$25 / notarization",
+    estimatedTime: "15 Minutes"
   },
   {
     id: "in-person", 
     title: "In-Person Notarization", 
     description: "Mobile notary available to meet at your preferred location.",
     price: "From $35 + travel fee",
+    estimatedTime: "90 Minutes / 1.5 Hours"
   },
   {
     id: "loan-signing",
     title: "Loan Signing",
     description: "Professional document signing for real estate, refinancing, and loans.",
     price: "Starting at $125",
+    estimatedTime: "20 Minutes"
   },
+  {
+    id: "passport-notarization",
+    title: "Passport Notarization",
+    description: "Fast and ",
+    price: "Flat rate of $60 per passport"
+  }
 ];
 
 export default function Services() {
@@ -61,11 +71,11 @@ export default function Services() {
 
         {selected && (
           <div className="mt-8 text-center">
-            <button
-              className="px-6 py-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition"
+            <a href="#booking"
+              className="px-6 py-2 rounded-xl bg-linear-to-r from-blue-500 to-indigo-500 text-white hover:bg-blue-700 transition"
             >
               Book This Service
-            </button>
+            </a>
           </div>
         )}
       </section>

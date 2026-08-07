@@ -15,7 +15,7 @@ export default function Footer() {
           <ul className="mt-3 space-y-2 text-sm">
             <li>Email: <a href="mailto:info@goodsignsnotaryservies.com" className="text-(--color-accent) hover:underline">info@goodsignsnotaryservies.com</a></li>
             <li>Phone: <a href="tel:5555555555" className="text-(--color-accent) hover:underline">(555) 555-5555</a></li>
-            <li>Location: Greater Seattle Area (Mobile + Online)</li>
+            <li>Area of Service: Greater Seattle Area (Mobile + Online)</li>
           </ul>
         </div>
 
